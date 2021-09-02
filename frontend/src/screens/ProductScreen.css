@@ -1,5 +1,6 @@
 .productscreen{
     max-width: 1300px;
+    padding-top: 200px;
     margin: 1rem auto;
     display: flex;
 }
@@ -79,5 +80,25 @@
     .right__info{
         width: 100%;
         margin: 0;
+    }
+}
+.homescreen__products{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1232px){
+    .homescreen__products{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 950px){
+    .homescreen__products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 630px){
+    .homescreen__products{
+        grid-template-columns: 1fr;
     }
 }

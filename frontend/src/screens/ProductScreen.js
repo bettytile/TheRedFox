@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { getProductDetails } from '../redux/action/productsAction';
 import {addToCart } from '../redux/action/cartActions';
+import Product from "../componenets/Product";
+import { getProducts as listProduct } from "../redux/action/productsAction";
 
 const ProductScreen = ({match, history}) => {
     
@@ -13,17 +15,21 @@ const ProductScreen = ({match, history}) => {
 
     const productDetails = useSelector(state => state.getProductDetails);
     const {loading, error, product} = productDetails;
+    const getProducts = useSelector((state) => state.getProducts);
+  const { products, loadings, errors } = getProducts;
 
     useEffect(()=>{
         if(product && match.params.id !== product._id){
             dispatch(getProductDetails(match.params.id));
         }
+        dispatch(listProduct());
     }, [dispatch,product,match]);
     const addToCartHandler = () => {
         dispatch(addToCart(product._id, qty));
         history.push("/cart");
     }
     return (
+        <>
         <div className="productscreen">
         {loading ? (
             <h2>Loading...</h2>
@@ -40,6 +46,8 @@ const ProductScreen = ({match, history}) => {
             <p className="left__name">{product.name}</p>
             <p>${product.unitPrice}</p>
             <p>Description: {product.description}</p>
+           <div style={{flexDirection:'row'}}><p>query:</p><textarea style={{width:500, height:150}}></textarea></div> 
+           <img src='../assets/images/food4.jpeg' alt='supplier logo'/>
             </div>
 
             </div>
@@ -64,10 +72,31 @@ const ProductScreen = ({match, history}) => {
                 </p>
                 </div>
             </div>
-
+            
             </>
         )}
+        
                     </div>
+                    <h2 className="homescreen__title">Top Suppliers Products</h2>
+      <div className="homescreen__products">
+        {loadings ? (
+          <h2>Loading.....</h2>
+        ) : error ? (
+          <h2>{errors}</h2>
+        ) : (
+          products.map((product) => <Product 
+          key={product._id} 
+          productId={product._id}
+              name={product.name}
+              unitPrice={product.unitPrice}
+              description={product.description}
+              imageUrl={product.imageUrl}
+            
+          />)
+        )}
+      </div>
+                    </>
+                    
     )
 }
 

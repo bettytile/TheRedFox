@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/theredfox.etredfox.com/static/css/main.d04491d2.chunk.css",
+    "main.js": "/theredfox.etredfox.com/static/js/main.85612f73.chunk.js",
+    "main.js.map": "/theredfox.etredfox.com/static/js/main.85612f73.chunk.js.map",
+    "runtime-main.js": "/theredfox.etredfox.com/static/js/runtime-main.5c69d1ca.js",
+    "runtime-main.js.map": "/theredfox.etredfox.com/static/js/runtime-main.5c69d1ca.js.map",
+    "static/js/2.dd766eac.chunk.js": "/theredfox.etredfox.com/static/js/2.dd766eac.chunk.js",
+    "static/js/2.dd766eac.chunk.js.map": "/theredfox.etredfox.com/static/js/2.dd766eac.chunk.js.map",
+    "static/js/3.e9de08c0.chunk.js": "/theredfox.etredfox.com/static/js/3.e9de08c0.chunk.js",
+    "static/js/3.e9de08c0.chunk.js.map": "/theredfox.etredfox.com/static/js/3.e9de08c0.chunk.js.map",
+    "index.html": "/theredfox.etredfox.com/index.html",
+    "static/css/main.d04491d2.chunk.css.map": "/theredfox.etredfox.com/static/css/main.d04491d2.chunk.css.map",
+    "static/js/2.dd766eac.chunk.js.LICENSE.txt": "/theredfox.etredfox.com/static/js/2.dd766eac.chunk.js.LICENSE.txt",
+    "static/media/IMG_4262.d0bfc63f.PNG": "/theredfox.etredfox.com/static/media/IMG_4262.d0bfc63f.PNG",
+    "static/media/Montserrat-Black.46e8b3d6.ttf": "/theredfox.etredfox.com/static/media/Montserrat-Black.46e8b3d6.ttf",
+    "static/media/Navbar.css": "/theredfox.etredfox.com/static/media/Montserrat-Italic.e7728c27.ttf",
+    "static/media/index.css": "/theredfox.etredfox.com/static/media/Montserrat-Medium.e2d60bc4.ttf",
+    "static/media/food4.38e50216.jpeg": "/theredfox.etredfox.com/static/media/food4.38e50216.jpeg",
+    "static/media/food4.38e50216.jpg": "/theredfox.etredfox.com/static/media/food4.38e50216.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c69d1ca.js",
+    "static/js/2.dd766eac.chunk.js",
+    "static/css/main.d04491d2.chunk.css",
+    "static/js/main.85612f73.chunk.js"
+  ]
+}

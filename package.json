@@ -1,10 +1,13 @@
 {
   "name": "crud",
   "version": "1.0.0",
+  "homepage": "theredfox.etredfox.com",
   "description": "",
   "main": "server.js",
+  "proxy": "localhost:3000",
   "scripts": {
     "start": "node backend/server.js",
+    "build": "react-scripts build",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -17,6 +20,8 @@
     "express": "^4.17.1",
     "mongodb": "^4.0.0",
     "mongoose": "^5.13.3",
+    "react-script": "^2.0.5",
+    "react-scripts": "^4.0.3",
     "react-simple-image-slider": "^2.1.2"
   },
   "devDependencies": {
